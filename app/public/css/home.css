@@ -1,0 +1,96 @@
+body {
+  background-color: whitesmoke;
+}
+
+#main {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.main-center-head {
+  background-color: gray;
+  min-width: 580px;
+  height: 380px;
+  border-radius: 20px;
+  position: relative;
+
+}
+.main-center-head::before {
+  border-radius: 18px;
+  background: none;
+  border: 2px solid whitesmoke;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  pointer-events: none;
+}
+
+.head {
+  min-width: 380px;
+  max-width: 400px;
+  position: relative;
+  margin: 0px auto;
+  padding: 30px 0px 0px 0px;
+}
+
+.head>.banner {
+  max-width: 100%;
+}
+
+.head>h1>.friend {
+  font-size: 100px;
+  position: absolute;
+  bottom: -50px;
+  left: -55px;
+  letter-spacing: -5px
+}
+
+.head>h1>.finder {
+  font-size: 100px;
+  position: absolute;
+  bottom: -85px;
+  right: -70px;
+  letter-spacing: -5px
+}
+
+#take-survey {
+  text-decoration: none;
+  display: inline-block;
+  background-color: gray;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+  color: whitesmoke;
+  padding: 15px;
+  margin-top: 25px;
+  position: relative;
+}
+
+#take-survey::before {
+  border-radius: 7px;
+  background: none;
+  border: 2px solid whitesmoke;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  pointer-events: none;
+}
+
+.main-center {
+  text-align: center;
+}
+
+.top-links {
+  margin: 10px 10px;
+  text-align: right;
+  padding-right: 10px;
+}

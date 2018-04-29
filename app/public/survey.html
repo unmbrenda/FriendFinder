@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Friend Finder</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/survey.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/modal.css" />
+</head>
+
+<body>
+  <div id="main">
+    <div></div>
+    <div class="top-links">
+      <a href="/api/friends">API Friends List</a>
+      |
+      <a href="https://github.com/jdolla/FriendFinder">Github Repo</a>
+    </div>
+    <div></div>
+    <div class="main-left"></div>
+    <div class="main-center-head">
+      <div class="head">
+        <img class="banner" src="/images/cartoon-1294010_1280.png" alt="" />
+        <h1>
+          <span class="friend">Friend</span>
+          <span class="finder">Finder</span>
+        </h1>
+      </div>
+    </div>
+    <div class="main-right"></div>
+    <div class="main-left"></div>
+    <div class="main-center">
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+
+        <!-- MODAL -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Say hello to your new friend!!</h2>
+          </div>
+          <div class="modal-body">
+            <div>
+              <img id="friend-pic" src="#" alt="Your New Friend.">
+            </div>
+            <div style="text-align: left">
+              <p>
+                <strong>
+                  <span class="modal-friend-name"></span>
+                </strong>
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+      <!-- MODAL -->
+
+      <br/>
+      <br/>
+      <form action="submit" id="survey">
+
+        <div class="question-box">
+          <input type="text" name="name" placeholder="Enter your name." required>
+        </div>
+        <div></div>
+
+        <div class="question-box">
+          <input type="text" name="image" placeholder="Url to profile pic" required>
+        </div>
+        <div></div>
+
+        <div class="question-box">
+          <p>Garden gnomes should not swim in cereal.</p>
+        </div>
+        <div class="slider-box">
+          <p>1</p>
+          <input name="q1" data-index="1" type="range" min="1" max="5" value="3" step="1" class="slider" list="steps">
+          <p style="display: inline-block">5</p>
+        </div>
+
+        <div class="question-box">
+          <p>Really? Batman kills Superman? Superman!!??</p>
+        </div>
+        <div class="slider-box">
+          <p>1</p>
+          <input name="q2" data-index="2" type="range" min="1" max="5" value="3" step="1" class="slider" list="steps" value="1">
+          <p style="display: inline-block">5</p>
+        </div>
+
+        <div class="question-box">
+          <p>You really hate taking stupid quizzes.</p>
+        </div>
+        <div class="slider-box">
+          <p>1</p>
+          <input name="q3" data-index="3" type="range" min="1" max="5" value="3" step="1" class="slider" list="steps">
+          <p style="display: inline-block">5</p>
+        </div>
+
+        <div class="question-box">
+          <p>You're super glad there aren't actually 10 questions.</p>
+        </div>
+        <div class="slider-box">
+          <p>1</p>
+          <input name="q4" data-index="4" type="range" min="1" max="5" value="3" step="1" class="slider" list="steps">
+          <p style="display: inline-block">5</p>
+        </div>
+
+        <div class="question-box">
+          <p>The number one is your favorite number.</p>
+        </div>
+        <div class="slider-box">
+          <p>1</p>
+          <input name="q5" data-index="5" type="range" min="1" max="5" value="3" step="1" class="slider" list="steps">
+          <p style="display: inline-block">5</p>
+        </div>
+
+        <datalist id="steps">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </datalist>
+        <div></div>
+        <div>
+          <button id="submit-questions">Submit</button>
+        </div>
+
+      </form>
+
+    </div>
+    <div class="main-right"></div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+    </script>
+  <script src="/js/survey.js"></script>
+  <script src="/js/modal.js"></script>
+</body>
+
+</html>
