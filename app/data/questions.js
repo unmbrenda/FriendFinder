@@ -1,7 +1,7 @@
 exports.questions = [
   {
     id: 1,
-    text: "I am Republican?"
+    text: "I am Republican."
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ exports.questions = [
   },
   {
     id: 4,
-    text: "I want to have a lot of money."
+    text: "I want to have a lot of kids."
   },
   {
     id: 5,
@@ -33,7 +33,7 @@ exports.questions = [
   },
   {
     id: 9,
-    text: "I wish i could eat pizza every day"
+    text: "I wish I could eat pizza every day"
   },
   {
     id: 10,
