@@ -1,13 +1,18 @@
 let friends = [
   {
-    name: "Kermit",
-    image: "https://s3.amazonaws.com/southfloridareporter/wp-content/uploads/2017/07/12001843/kermit-1651325_1920.jpg",
-    answers: [3, 5, 1, 2, 2]
+    name: "Mary",
+    image: "https://vignette.wikia.nocookie.net/particracy/images/9/98/Ugly_woman.png/revision/latest?cb=20150628170355",
+    answers: [3, 5, 1, 4, 2, 3, 4, 2, 1, 2]
   },
   {
-    name: "Gonzo",
-    image: "http://v1talworldcreative.com/wp-content/uploads/2015/10/Gonzo-Alt.jpg",
-    answers: [5, 5, 4, 5, 3]
+    name: "John",
+    image: "http://www.worldstopmost.com/wp-content/uploads/2016/04/Noah-Mills-Most-Handsome-Man-2016.jpg",
+    answers: [3, 5, 1, 2, 2, 3, 4, 2, 5, 2]
+  },
+  {
+    name: "Lisa",
+    image: "https://i.imgflip.com/lc4fj.jpg",
+    answers: [5, 5, 4, 5, 3, 3, 2, 4, 2, 5]
   }
 ]
 

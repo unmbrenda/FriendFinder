@@ -22,7 +22,7 @@ router.post('/friends', (req, res) => {
     }
 
     if(!validUrl.isUri(newFriend.image)){
-      newFriend.image = "https://yt3.ggpht.com/a-/AJLlDp1zbK9dJ35g9R2Q-WwZmlbUFKqx3NHYCm4bwg=s900-mo-c-c0xffffffff-rj-k-no";
+      newFriend.image = "https://upload.wikimedia.org/wikipedia/en/b/b1/Portrait_placeholder.png";
     }
     // console.log(incomming.answers);
 
@@ -41,7 +41,7 @@ router.post('/friends', (req, res) => {
   } catch (err) {
     console.log(err);
     res.status(500);
-    res.send({error: "well, that didn't work"});
+    res.send({error: "Sorry that didn't work"});
   }
 });
 
